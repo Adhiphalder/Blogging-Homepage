@@ -10,6 +10,16 @@
 
         <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
+        <style>
+            .section-dropdown-two{
+                position: absolute;
+                width: 366px;
+                left: -7px;
+                border-radius: 0px 13px 13px 0px;
+                padding: 0;
+            }
+        </style>
+
     </head>
     <body>
 
@@ -22,12 +32,34 @@
                     <input class="dropdown" type="checkbox" id="dropdown1" name="dropdown"/>
                     <label class="for-dropdown" for="dropdown1"> <i class="fa-regular fa-message"></i> </label> 
                     <div class="section-dropdown"> 
-                        <h1>Chats</h1> <i href="#" class="fa-brands fa-facebook-messenger"></i>
+                        <h1>Chats</h1> <i href="#" class="fa-brands fa-facebook-messenger" style="top: -32px;"></i>
                         <!-- <div class="profile-img"></div> <br>
                         <a href="#"><span>ADHIP</span></a><hr>
                         <a href="#"><span>bsdvvs</span></a><hr>
                         <a href="#">Profile</a>
                         <a href="#">Sign Out</a>  -->
+                    </div>
+
+                    <div class="section-dropdown section-dropdown-two">
+                        <h1>Threads</h1>
+                        <input type="checkbox" name="section-message" id="section-message" style="display: none;">
+                        <div class="section-dropdown-two-body">
+                            <label for="section-message" class="chat-button ">Go to Message</label>
+                        </div>
+
+                        <div class="section-dropdown-two-body-second">
+                            <div class="section-dropdown-two-body-second-img">
+                                <img src="https://www.redditstatic.com/chat-web/images/welcome-6AUNLRD4.png" alt="">
+                            </div>
+                            <div class="section-dropdown-two-body-second-para">
+                                <p>Welcome to chat</p>
+                                <p style="font-weight: 500;">Start a direct or group chat with other users</p>
+                            </div>
+                            <div class="section-dropdown-two-body-second-button" style="margin-top: 9px;">
+                                <button class="chat-button" style="padding-top: 0px;">Start new Chat</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             
