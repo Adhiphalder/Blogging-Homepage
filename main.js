@@ -1,6 +1,3 @@
-
- 
- /*=============== LINK ACTIVE ===============*/
  const sidebarLink = document.querySelectorAll('.sidebar__list a')
  
  function linkColor(){
