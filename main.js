@@ -6,4 +6,19 @@
  }
  
  sidebarLink.forEach(l => l.addEventListener('click', linkColor))
- 
+
+
+
+const likeDislikeDiv = document.querySelector('.like-dislike');
+const upvote = document.querySelector('.like-dislike .upvote');
+const downvote = document.querySelector('.like-dislike .downvote');
+
+upvote.addEventListener('click', () => {
+    likeDislikeDiv.classList.toggle('highlight-upvote'); 
+    likeDislikeDiv.classList.remove('highlight-downvote'); 
+});
+
+downvote.addEventListener('click', () => {
+    likeDislikeDiv.classList.toggle('highlight-downvote');
+    likeDislikeDiv.classList.remove('highlight-upvote'); 
+});
