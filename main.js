@@ -1,4 +1,4 @@
- const sidebarLink = document.querySelectorAll('.sidebar__list a')
+const sidebarLink = document.querySelectorAll('.sidebar__list a')
  
  function linkColor(){
      sidebarLink.forEach(l => l.classList.remove('active-link'))
@@ -22,3 +22,12 @@ downvote.addEventListener('click', () => {
     likeDislikeDiv.classList.toggle('highlight-downvote');
     likeDislikeDiv.classList.remove('highlight-upvote'); 
 });
+
+
+
+function linkColor(){
+    sidebarLink.forEach(l => l.classList.remove('active-link'))
+    this.classList.add('active-link')
+}
+
+sidebarLink.forEach(l => l.addEventListener('click', linkColor))
