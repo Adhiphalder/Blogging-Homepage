@@ -967,13 +967,13 @@ transition: all 0.3s ease;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-.dropdown3:checked ~ .section-dropdown3 {
+.section-dropdown3.show {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
-
 
 .dropdown3-floating-message{
   position: absolute;
