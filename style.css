@@ -115,7 +115,7 @@ outline: none;
 
 .menu{
 position: relative;
-right: 25px;
+right: -19px;
 }
 
 *,
@@ -1158,7 +1158,7 @@ transition: all 0.3s ease;
 }
 
 .username span{
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .username span:hover{
@@ -1371,7 +1371,10 @@ left: 55px;
   font-weight: 700;
   border: none;
   border-radius: 50px;
-  fill: currentColor;
+}
+
+.like-dislike svg:hover{
+
 }
 
 .like-dislike .upvote:hover {
