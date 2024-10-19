@@ -1180,6 +1180,10 @@ transition: all 0.3s ease;
     color: white;
 }
 
+.create-post-body::placeholder{
+  font-size: 15px;
+}
+
 .create-post-form form{
     display: flex;
     flex-direction: column;
