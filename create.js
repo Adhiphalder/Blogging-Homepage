@@ -48,7 +48,7 @@ document.getElementById('create-post-form-img').addEventListener('change', funct
 
             label.innerHTML = `File selected: ${file.name}`;
         } else {
-            label.innerHTML = 'Selected file is not an image';
+            label.innerHTML = 'Please select an image';
             imagePreview.classList.remove('active');
         }
     } else {
@@ -56,3 +56,48 @@ document.getElementById('create-post-form-img').addEventListener('change', funct
         imagePreview.classList.remove('active');
     }
 });
+
+/*-----------------*\
+  COMMUNITY SEARCH
+\*-----------------*/
+
+
+function toggleSearchBar(event) {
+    event.stopPropagation();
+    const searchBar = document.getElementById('create-post-community-search-bar');
+    const createButton = document.getElementById('create-post-community-button');
+
+    searchBar.style.opacity = '1';
+    searchBar.style.pointerEvents = 'auto';
+
+    createButton.style.opacity = '0';
+    createButton.style.pointerEvents = 'none';
+
+    document.addEventListener('click', handleOutsideClick);
+  }
+
+  function handleOutsideClick(event) {
+    const searchBar = document.getElementById('create-post-community-search-bar');
+    const createButton = document.getElementById('create-post-community-button');
+    const searchInput = document.getElementById('post-community-search-input');
+
+    if (!searchBar.contains(event.target) && !searchInput.contains(event.target)) {
+      searchBar.style.opacity = '0';
+      searchBar.style.pointerEvents = 'none';
+
+      createButton.style.opacity = '1';
+      createButton.style.pointerEvents = 'auto';
+
+      document.removeEventListener('click', handleOutsideClick);
+    }
+  }
+
+  function search() {
+    const query = document.getElementById('post-community-search-input').value;
+    alert(`Searching for: ${query}`);
+  }
+
+  function search() {
+    const query = document.getElementById('post-community-search-input').value;
+    alert(`Searching for: ${query}`);
+  }
