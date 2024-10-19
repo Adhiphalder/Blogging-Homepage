@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="comment.css">
+        <link rel="stylesheet" href="create.css">
         <link rel="shortcut icon" href="{{asset('favicon.svg')}}" type="image/svg+xml">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Comment</title>
+        <title>Create Post</title>
 
         <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
@@ -142,6 +142,7 @@
                             </span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </header>  
@@ -232,90 +233,41 @@
    
          <main class="main container" id="main">
 
-            <a href="">
-                <button class="main-back-button" style="margin-top: 53px;">
-                    <svg rpl="" fill="white" height="16" icon-name="back-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <!--?lit$799404106$--><!--?lit$799404106$--><path d="M19 9.375H2.51l7.932-7.933-.884-.884-9 9a.625.625 0 0 0 0 .884l9 9 .884-.884-7.933-7.933H19v-1.25Z"></path><!--?-->
-                    </svg>
-                </button>
-            </a>
+            <div class="create-post">
 
-            <div class="main-user-profile">
-                <img src="/Pictures/userlogo.png" alt="">
-                <div>
-                    <p>@r/Username</p>
-                    <p>Just saying</p>
+                <div class="create-post-header">
+                    <h3>Create Post</h3>
+                    <span class="create-post-header-span">Drafts</span>
                 </div>
+
+                <div class="create-post-form">
+                    <form action="" method="get">
+                        <div class="form-one">
+                            <input type="text" name="" id="" class="create-post-title" style="margin-left: 0px;" placeholder="Title" required>
+                        </div>
+                        <div class="form-two">
+                            <textarea name="" id="" class="create-post-body" required placeholder="Body"></textarea>
+                        </div>
+                        <div class="form-three">
+                            <input type="file" class="" id="create-post-form-img" style="display: none;">
+                            <label class="create-post-form-img-lable" for="create-post-form-img">
+                                <span>Click me to upload image</span>
+                                <svg rpl="" fill="currentColor" height="16" icon-name="upload-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+                                    <!--?lit$300430425$--><!--?lit$300430425$--><path d="m10.513 5.63 3.929 3.928-.884.884-2.933-2.933V19h-1.25V7.51l-2.933 2.932-.884-.884L9.67 5.446l.589-.029.254.212Zm5.859-1.482A6.876 6.876 0 0 0 10 0a6.876 6.876 0 0 0-6.372 4.148A4.639 4.639 0 0 0 0 8.625a4.716 4.716 0 0 0 4.792 4.625V12A3.465 3.465 0 0 1 1.25 8.625 3.412 3.412 0 0 1 4.189 5.31l.364-.06.123-.35A5.607 5.607 0 0 1 10 1.25a5.607 5.607 0 0 1 5.324 3.65l.123.348.364.06a3.412 3.412 0 0 1 2.939 3.317A3.465 3.465 0 0 1 15.208 12v1.25A4.716 4.716 0 0 0 20 8.625a4.639 4.639 0 0 0-3.628-4.477Z"></path><!--?-->
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form-four">
+                            <button class="form-four-button" type="submit">Post</button>
+                        </div>
+                    </form>
+                </div>
+                
             </div>
-
-            <div class="main-user-topic">
-                Chirag Paswan and Vishal are cousins. Here is an old video (6yrs back) of them celebrating Ganesh festival. It is sad people speculated them to be a couple ...
-            </div>
-
-            <div class="main-user-img">
-                <img src="/Pictures/midpic.jpg" alt="">
-            </div>
-
-            <div class="main-user-comments-zero-div">
-                Comments
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="/Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="/Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="/Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="/Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
          </main>
 
 
 
-        <script src="comment.js"></script>
+        <script src="create.js"></script>
     </body>
 </html> 

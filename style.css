@@ -138,7 +138,7 @@ outline: none;
 
 .menu{
 position: relative;
-right: -19px;
+right: 25px;
 }
 
 *,
@@ -962,8 +962,8 @@ transition: all 0.3s ease;
 
 .section-dropdown3 {
   position: absolute;
-  top: 72px;
-  right: -67px;
+  top: 60px;
+  right: -6px;
   width: 203px;
   height: auto;
   border-radius: 6px;
@@ -975,20 +975,21 @@ transition: all 0.3s ease;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-.dropdown3:checked ~ .section-dropdown3 {
+.section-dropdown3.show {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
 
 .dropdown3-floating-message{
   position: absolute;
-  top: 43px;
+  top: 50px;
   right: -48px;
   font-size: 13px;
-  width: 130px;
+  width: 150px;
   height: 29px;
   text-align: center;
   padding-top: 6px;
@@ -1093,11 +1094,12 @@ transition: all 0.3s ease;
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
+  padding-right: 70px;
 }
 
 .section-dropdown3-profile-text p{
   color: #ffffff7e;
-  font-size: 14px;
+  font-size: 5px;
 }
 
 .section-dropdown3-settings span{
@@ -1164,6 +1166,8 @@ transition: all 0.3s ease;
   color: #9fa5b5;
   padding-top: 15px;
 }
+
+
 
 .username span{
   margin-left: 10px;
@@ -1569,7 +1573,7 @@ left: 55px;
   z-index: 1;
 }
 
-.sec-center p{
+.sec-center-p{
   color: #878a8c;
   font-size: 14px;
   font-weight: 900;
