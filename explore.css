@@ -1129,16 +1129,24 @@ body.dark-theme {
   #SLIDEBAR
 \*-----------------*/
 
+.slide-container {
+  width: 100%; /* Full width container */
+  overflow: hidden; /* Hide overflowing content */
+}
 
 .main-slidebar{
   margin-top: 18px;
   margin-bottom: 20px;
   display: flex;
   gap: 10px;
-  overflow-x: scroll;
+  overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
+}
+
+.main-slidebar li {
+  flex: 0 0 auto;
 }
 
 .main-container-heading{
@@ -1209,7 +1217,7 @@ body.dark-theme {
 
 
 .identifier{
-  width: 321px;
+  width: 312px;
   height: fit-content;
   padding: 12px;
   display: flex;
