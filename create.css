@@ -1150,10 +1150,22 @@ transition: all 0.3s ease;
   border-radius: 19px;
   padding-left: 17px;
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 9px;
+  gap: 89px;
   transition: opacity 0.3s ease;
   cursor: pointer;
+}
+
+.create-post-community-button-svg{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.create-post-community-button-img{
+  width: 23px;
+  margin-bottom: 9px;
 }
 
 #create-post-community-search-bar{
@@ -1161,8 +1173,6 @@ transition: all 0.3s ease;
   top: 3.6rem;
   display: flex;
   justify-content: space-around;
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
@@ -1242,7 +1252,7 @@ transition: all 0.3s ease;
   border-right: none;
   color: #b7cad4;
   background: none;
-  border-radius:19px 0px 0px 19px;
+  border-radius:19px 19px 19px 19px;
   padding-left: 13px;
 
 }
@@ -1262,6 +1272,17 @@ transition: all 0.3s ease;
   text-align: center;
   border-radius:0px 19px 19px 0px;
   cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .form-one{
