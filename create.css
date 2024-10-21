@@ -1150,10 +1150,22 @@ transition: all 0.3s ease;
   border-radius: 19px;
   padding-left: 17px;
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  gap: 9px;
+  gap: 89px;
   transition: opacity 0.3s ease;
   cursor: pointer;
+}
+
+.create-post-community-button-svg{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.create-post-community-button-img{
+  width: 23px;
+  margin-bottom: 9px;
 }
 
 #create-post-community-search-bar{
