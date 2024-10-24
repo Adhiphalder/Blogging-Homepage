@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="comment.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="{{asset('favicon.svg')}}" type="image/svg+xml">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Comment</title>
+        <title>Welcome</title>
 
         <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
@@ -25,11 +25,20 @@
     </head>
     <body>
 
+        <!-- 
+         - SECTION NAVBAR
+        -->
+
         <header>
             <a href="/" class="logo"><img src=""></a>
             <input type="text" placeholder="Search" id="searchInput">
 
             <div class="menu">
+
+                <!-- 
+                - DROPDOWN MESSAGE
+                -->
+
                 <div class="sec-center"> 	
                     <input class="dropdown" type="checkbox" id="dropdown1" name="dropdown"/>
                     <label class="for-dropdown" for="dropdown1"> <i class="fa-regular fa-message"></i> </label> 
@@ -61,6 +70,11 @@
                 </div>
             
                 <button href="#" class="create"><i class="fa-solid fa-plus"></i> <span>Create</span></button>
+
+
+                <!-- 
+                - DROPDOWN2 NOTIFICATION
+                -->
             
                 <div class="sec-center"> 	
                     <input class="dropdown2" type="checkbox" id="dropdown2" name="dropdown"/>
@@ -87,6 +101,7 @@
                                 </div>
                             </div>
                         </a>
+
                         <a href="#">
                             <div class="profile-container">
                                 <div class="profile-img"></div>
@@ -96,6 +111,9 @@
                                 </div>
                             </div>
                         </a>
+
+
+
                         <a href="#">
                             <div class="profile-container">
                                 <div class="profile-img"></div>
@@ -108,6 +126,11 @@
 
                     </div>
                 </div>
+
+
+                <!-- 
+                - DROPDOWN3 USER ICON
+                -->
             
                 <div class="sec-center">    	
                     <input class="dropdown3" type="checkbox" id="dropdown3" name="dropdown"/>
@@ -142,10 +165,14 @@
                             </span>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </header>  
-
+        </header> 
+        
+        <!-- 
+         - SECTION SIDEBAR
+        -->
 
          <nav class="sidebar" id="sidebar">
             <div class="sidebar__container">
@@ -232,79 +259,12 @@
    
          <main class="main container" id="main">
 
-            <a href="">
-                <button class="main-back-button" style="margin-top: 53px;">
-                    <svg rpl="" fill="white" height="16" icon-name="back-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-                    <!--?lit$799404106$--><!--?lit$799404106$--><path d="M19 9.375H2.51l7.932-7.933-.884-.884-9 9a.625.625 0 0 0 0 .884l9 9 .884-.884-7.933-7.933H19v-1.25Z"></path><!--?-->
-                    </svg>
-                </button>
-            </a>
-
-            <div class="main-user-profile">
-                <img src="Pictures/userlogo.png" alt="">
-                <div>
-                    <p>@r/Username</p>
-                    <p>Just saying</p>
-                </div>
-            </div>
-
-            <div class="main-user-topic">
-                Chirag Paswan and Vishal are cousins. Here is an old video (6yrs back) of them celebrating Ganesh festival. It is sad people speculated them to be a couple ...
-            </div>
-
-            <div class="main-user-img">
-                <img src="Pictures/midpic.jpg" alt="">
-            </div>
-
-            <div class="main-user-comments-zero-div">
-                Comments
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-            <div class="main-user-comments">
-
-                <div class="main-user-comments-first-div">
-                    <img src="Pictures/userlogo.webp" alt="">
-                    <div>@Username</div>
-                    <div>• 5 hour ago</div>
-                </div>
-                <div class="main-user-comments-second-div">
-                    You are so trustworthy; I always believe what you say. Everything seems brighter when you are around. Even the things you don't like about yourself make you interesting. I know that you will always have my back, because that is the kind of person you are.
-                </div>
-
-            </div>
-
-
-
+            
          </main>
 
 
 
-        <script src="comment.js"></script>
+
+        <script src="main.js"></script>
     </body>
 </html> 
