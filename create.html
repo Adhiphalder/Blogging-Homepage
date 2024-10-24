@@ -243,15 +243,58 @@
                 <div class="create-post-community">
 
                     <button class="create-post-community-button" id="create-post-community-button" onclick="toggleSearchBar(event)">
-                        <svg rpl="" aria-hidden="true" fill="currentColor" height="16" icon-name="search-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.5 18.616 14.985 14.1a8.528 8.528 0 1 0-.884.884l4.515 4.515.884-.884ZM1.301 8.553a7.253 7.253 0 1 1 7.252 7.253 7.261 7.261 0 0 1-7.252-7.253Z"></path>
-                        </svg>
-                        <span>Search</span>
+                        <div class="create-post-community-button-svg">
+                            <svg rpl="" aria-hidden="true" fill="currentColor" height="16" icon-name="search-outline" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 18.616 14.985 14.1a8.528 8.528 0 1 0-.884.884l4.515 4.515.884-.884ZM1.301 8.553a7.253 7.253 0 1 1 7.252 7.253 7.261 7.261 0 0 1-7.252-7.253Z"></path>
+                            </svg>
+                            <span>Search</span>
+                        </div>
+
+                        <img src="Pictures/down-arrow.svg" class="create-post-community-button-img" alt="">
+
                     </button>
 
-                    <div id="create-post-community-search-bar">
+                    <div id="create-post-community-search-bar" class="hidden">
                         <input type="text" id="post-community-search-input" placeholder="Search...">
-                        <button class="post-community-search-button" onclick="search()">Search</button>
+                    </div>
+
+                    <div class="create-post-community-community-bar hidden" id="create-post-community-community-bar">
+
+                        <div class="create-post-community-community-bar-community">
+
+                            <h3>Your Community</h3>
+
+                            <p class="create-post-community-community-bar-community-para"  onclick="selectCommunity('r/IndianStockMarket')">
+                                <img src="https://styles.redditmedia.com/t5_30ke2/styles/communityIcon_7s1ojp85ocj61.png" alt="">
+                                <span>r/IndianStockMarket</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para" onclick="selectCommunity('r/bangalore')">
+                                <img src="https://styles.redditmedia.com/t5_2qhvf/styles/communityIcon_pulpp8crshh91.png" alt="">
+                                <span>r/bangalore</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para" onclick="selectCommunity('r/BollyBlindsNGossip')">
+                                <img src="https://styles.redditmedia.com/t5_fknyy/styles/communityIcon_z40tlzmvbyw91.png" alt="">
+                                <span>r/BollyBlindsNGossip</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para" onclick="selectCommunity('r/AskIndia')">
+                                <img src="https://styles.redditmedia.com/t5_2s8wu/styles/communityIcon_f0eqjg7jiyja1.JPG" alt="">
+                                <span>r/AskIndia</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para"  onclick="selectCommunity('r/IndianStockMarket')">
+                                <img src="https://styles.redditmedia.com/t5_30ke2/styles/communityIcon_7s1ojp85ocj61.png" alt="">
+                                <span>r/IndianStockMarket</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para" onclick="selectCommunity('r/BollyBlindsNGossip')">
+                                <img src="https://styles.redditmedia.com/t5_fknyy/styles/communityIcon_z40tlzmvbyw91.png" alt="">
+                                <span>r/BollyBlindsNGossip</span>
+                            </p>
+                            <p class="create-post-community-community-bar-community-para" onclick="selectCommunity('r/bangalore')">
+                                <img src="https://styles.redditmedia.com/t5_2qhvf/styles/communityIcon_pulpp8crshh91.png" alt="">
+                                <span>r/bangalore</span>
+                            </p>
+
+                        </div>
+
                     </div>
                     
                 </div>

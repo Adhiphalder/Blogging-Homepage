@@ -1,7 +1,38 @@
-
 /*-----------------*\
   #MAIN
 \*-----------------*/
+
+const slidebar = document.querySelector('.main-slidebar');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slidebar.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slidebar.classList.add('active');
+  startX = e.pageX - slidebar.offsetLeft;
+  scrollLeft = slidebar.scrollLeft;
+});
+
+slidebar.addEventListener('mouseleave', () => {
+  isDown = false;
+  slidebar.classList.remove('active');
+});
+
+slidebar.addEventListener('mouseup', () => {
+  isDown = false;
+  slidebar.classList.remove('active');
+});
+
+slidebar.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slidebar.offsetLeft;
+  const walk = (x - startX) * 2; //scroll-fast
+  slidebar.scrollLeft = scrollLeft - walk;
+});
+
+
 
 const buttons = document.querySelectorAll('.identifier-button');
 const sections = document.querySelectorAll('.identifier-body');
@@ -19,7 +50,7 @@ buttons.forEach(button => {
         
         document.getElementById(target).classList.add('active');
     });
-});
+}); 
 
 /*-----------------*\
   #USER PROFILE
