@@ -81,12 +81,12 @@ max-width: 100%;
 height: auto;
 }
 
-input[type="text"]::placeholder {
+#searchInput::placeholder {
 color: #bec0d6a8;  
 font-size: 15px;
 }
 
-input[type="text"] {
+#searchInput {
 display: flex;
 width: 30rem;   
 border: none;
@@ -98,12 +98,12 @@ margin-left: 35px;
 transition: border-color 0.3s; 
 }
 
-input[type="text"]:focus {
+#searchInput:focus {
 border-color: #BEC0D6;
 outline: none; 
 }
 
-input[type="text"]:hover {
+#searchInput:hover {
 background-color: #8a8c9e75;
 outline: none; 
 }
@@ -1131,4 +1131,182 @@ body.dark-theme {
   font-size: 14px;
   font-weight: 500;
   color: white;
+}
+
+
+/*-----------------*\
+  #MAIN 
+\*-----------------*/
+
+.all-element-main{
+  width: 50rem;
+
+}
+
+.all-element-main form{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.all-element-main-img{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-img-profile-img-lable{
+  padding-left: 23px;
+  padding-right: 23px;
+  width: 11rem;
+  height: 10.7rem;
+  border-radius: 93px;
+  background: none;
+  border: 1px solid rgb(69, 69, 69);
+  color: rgb(207, 207, 207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.main-img-profile-img-lable:hover{
+  background: none;
+  color: rgb(207, 207, 207);
+}
+
+#image-preview-profile{
+  position: absolute;
+  width: 11rem;
+  height: 10.7rem;
+  border-radius: 93px;
+  top: 5rem;
+  display: none;
+  overflow: hidden;
+}
+
+#image-preview-profile.active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-preview-profile > img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 83px;
+}
+
+.main-img-cover-img-lable{
+  width: 33rem;
+  height: 10.7rem;
+  border-radius: 23px;
+  background: none;
+  border: 1px solid rgb(69, 69, 69);
+  color: rgb(207, 207, 207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.main-img-cover-img-lable:hover{
+  background: none;
+  color: rgb(207, 207, 207);
+}
+
+#image-preview-cover{
+  position: absolute;
+  width: 33rem;
+  height: 10.7rem;
+  top: 5rem;
+  display: none;
+  overflow: hidden;
+}
+
+#image-preview-cover.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-preview-cover > img{
+  width: 32rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+.main-form-input{
+  width: 19rem;
+  height: 1.9rem;
+  background: none;
+  border: 1px solid rgb(69, 69, 69);
+  padding-left: 8px;
+  color: white;
+  border-radius: 5px;
+}
+
+.main-input-gender{
+  display: flex;
+  gap: 12px;
+}
+
+#male, #female, #others{
+  accent-color: rgb(255, 77, 0);
+}
+
+.main-input-gender-radio > div >label{
+  cursor: pointer;
+}
+
+.main-input-gender-radio{
+  display: flex;
+  gap: 13px;
+}
+
+.main-form-input, label:hover{
+  background: none;
+  color: hsl(228, 8%, 56%);
+}
+
+#phone_no::-webkit-outer-spin-button,
+#phone_no::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.main-form-input::-webkit-calendar-picker-indicator { 
+  filter: invert(1); 
+  cursor: pointer;
+}
+
+.main-form-input:focus{
+  outline: none;
+}
+
+.main-submit-button{
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 19px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  background-color: rgb(255, 77, 0);
+  border: 1px solid rgb(255, 77, 0);
+  border-radius: 15px;
+  transition: all .50s ease;
+  cursor: pointer;
+}
+
+.main-submit-button:hover{
+  background: none;
+  color: rgb(255, 77, 0);
+  border: 1px solid rgb(255, 77, 0);
 }
