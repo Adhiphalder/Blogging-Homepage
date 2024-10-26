@@ -1129,6 +1129,28 @@ transition: all 0.3s ease;
     color: white;
 }
 
+.create-community-button{
+  background-color: transparent;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 2;
+  height: 40px;
+  width: 238px;
+  transition: all 200ms linear;
+  border-radius: 50px;
+  border: 1px solid #f0f0f056;
+  letter-spacing: 1px;
+  padding-left: 18px;
+}
+
+.create-community-button:hover{
+  background-color: #f0f0f056; 
+  color: #BEC0D6;
+  transition: all 0.3s ease; 
+}
+
 .create-post-header{
     width: 100%;
     display: flex;
