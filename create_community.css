@@ -1,0 +1,140 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+
+	background: url("images/sunset-1373171_960_720.jpg");
+	background-size: 100%;
+
+}
+
+.main-container{
+
+	width: 360px;
+	height: 450px;
+	margin: 8% auto;
+	background: black;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+ h3{
+
+	text-align: left;
+	margin-bottom: 40px;
+	color: white;
+}
+
+#form1, #form2, #form3 p{
+
+	text-align: left;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.main-container form{
+
+	width: 280px;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	transition: .5s;
+	text-align: unset;
+}
+
+form input{
+
+	width: 150px;
+	padding: 10px 5px;
+	margin: 15px 0;
+	border: 0;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+	color: white;
+
+
+}
+
+::placeholder{
+	color: #FF4D04;
+
+}
+.btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+form button{
+
+	width: 110px;
+	height: 35px;
+	margin: 0 10px;
+	background: #FF4D04;
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
+#form2{
+	left: 450px;
+}
+
+#form3{
+	left: 450px;
+}
+
+.step-row{
+	width: 360px;
+	height: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 -1px 5px -1px black;
+	position: relative;
+}
+
+.step-col{
+
+	width: 120px;
+	text-align: center;
+	color: #3b3b3b;
+	position: relative;
+}
+
+#progress{
+
+	position: absolute;
+	height: 100%;
+	width: 120px;
+	background: whitesmoke;
+}
+small{
+	color: #FF4D04;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+#progress::after{
+
+	content: '';
+	height: 0;
+	width: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	border-left: 20px solid white;
+}
