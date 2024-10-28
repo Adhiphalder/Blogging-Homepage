@@ -33,25 +33,24 @@ var back1 = document.getElementById("back1");
 var back2 = document.getElementById("back2");
 var progress = document.getElementById("main-progress");
 
-// Input fields
 var communityName = document.getElementById("main-h3-input-first");
 var description = document.querySelector(".main-form1-text");
 var firstFileInput = document.getElementById("main-form2-first-file");
 var secFileInput = document.getElementById("main-form2-sec-file");
 
 next1.onclick = function () {
-    // Check if Community Name is not null or empty and has no spaces
+
     if (communityName.value.trim() === "" || /\s/.test(communityName.value)) {
         alert("Community Name cannot be empty or contain spaces.");
         return;
     }
-    // Check if Description is not null or empty
+
     if (description.value.trim() === "") {
         alert("Description cannot be empty.");
         return;
     }
 
-    // If both fields are valid, proceed with the form transition
+
     form1.style.left = "-950px";
     form2.style.left = "40px";
     progress.style.width = "400px";
@@ -64,7 +63,7 @@ back1.onclick = function () {
 }
 
 next2.onclick = function () {
-    // Check if both file inputs are provided
+
     if (!firstFileInput.value) {
         alert("Please upload a file for the Banner.");
         return;
@@ -74,7 +73,7 @@ next2.onclick = function () {
         return;
     }
 
-    // If both file inputs are valid, proceed with the form transition
+
     form2.style.left = "-950px";
     form3.style.left = "175px";
     progress.style.width = "700px";
