@@ -16,3 +16,49 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+/*-----------------*\
+     BACKGROUND
+\*-----------------*/
+
+
+const infoImage = document.getElementById("infoImage");
+const infoCover = document.querySelector(".info-cover");
+
+function updateBackground() {
+    const newSrc = infoImage.src;
+    infoCover.style.setProperty("--bg-url", `url('${newSrc}')`);
+}
+
+updateBackground();
+
+const observer = new MutationObserver(updateBackground);
+observer.observe(infoImage, { attributes: true, attributeFilter: ["src"] });
+
+
+/*-----------------*\
+    BUTTON TOGGLE
+\*-----------------*/
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".com-follower-profile-button");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+            // event.preventDefault(); // Prevents unwanted page jumps
+
+            if (this.innerText === "Follow") {
+                this.innerText = "Followed";
+                this.classList.add("followed");
+                alert("You're successfully following this user");
+            } else {
+                this.innerText = "Follow";
+                this.classList.remove("followed");
+            }
+        });
+    });
+});
+
+  
